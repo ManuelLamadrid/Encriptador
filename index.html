@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <header class="logo">
+            <img src="imagen/Alura.png" alt="Logo de encriptador">
+        </header>
+
+        <main>
+            <section class="contenedor-encriptar">
+
+                <textarea type="text" cols="10" rows="10" id= "texto-a-encriptar" class="input-principal" placeholder="Ingresa tu texto"></textarea>
+                <div class="advertencias">
+                    <img src="imagen/Signo.png" alt="signo de advertencia" class="signo-advertencia">
+                    <h5 class="texto-advertencia">Solo puedes ingresar letras minúsculas y sin acentos</h5>
+                </div>
+                
+                <div class="botones-principales">
+                    <input type="submit" value="Encriptar" class="encriptar" onclick="encriptarTexto()">
+                    <input type="submit" value="Desencriptar" class="desencriptar" onclick=" desencriptarTexto()">
+                </div>
+                
+            </section>
+    
+            <section class="contenedor-desencriptar">
+                
+                <textarea  class="mensajeEncriptado" cols="8" rows="10" readonly="readonly" placeholder="Ningun mensaje ha sido generado"></textarea>
+                <br><br>
+                <input type="submit" value="Copiar"
+                        class="copiar" onclick="copiarTextoEncriptado()">
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="iconos-redes">
+                <h6 class="autor">Autor:</h6>
+                <p class="nombre-autor">Manuel Lamadrid</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
